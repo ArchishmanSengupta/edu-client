@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
     margin: 0,
     // marginTop: '8px',
     borderRadius: "8px",
+    // background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)'
   },
   cardHeader: {
     backgroundColor: "#A60000",
@@ -33,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "12px",
   },
   subheader: {
-    fontStyle: "italic",
+    fontStyle: "Bold",
     fontSize: "10px",
     color: "rgb(255, 255, 255, 0.8)",
     marginTop: "8px",

@@ -9,6 +9,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "16px",
     borderRadius: "8px",
     padding: 0,
+    background: '2c2a2a',
+    boxShadow: "inset 5px 5px 10px #1f1e1e",
+    // "inset -5px -5px 10px #393636"
   },
   cardHeader: {
     backgroundColor: "#A60000",

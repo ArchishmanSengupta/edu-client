@@ -8,7 +8,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#A60000",
     color: "#ffffff",
     textTransform: "capitalize",
-    boxShadow: "0px 10px 40px rgba(0, 0, 0, 0.25)",
+    borderRadius: "20px",
+    background: "574c4c",
+    boxShadow: "6px 6px 12px #666666",
+    // "-20px -20px 60px #776868"
     padding: "10px",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
