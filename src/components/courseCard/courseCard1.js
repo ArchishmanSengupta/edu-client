@@ -9,21 +9,50 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "16px",
     borderRadius: "8px",
     padding: 0,
+<<<<<<< HEAD
     background: '2c2a2a',
     boxShadow: "inset 5px 5px 10px #1f1e1e",
     // "inset -5px -5px 10px #393636"
+=======
+    "&:hover": {
+      cursor: "pointer",
+      transform: "translateY(-2px)",
+    },
+>>>>>>> upstream/main
   },
   cardHeader: {
     backgroundColor: "#A60000",
     color: "#fff",
   },
+  bottomfont: {
+    paddingLeft: "8px",
+    fontStyle: "italic",
+    fontSize: "12px",
+  },
   icon: {
     color: "#fff",
     padding: "4px",
   },
-  title: {
+  topic: {
+    fontSize: "18px",
     fontWeight: 700,
-    fontSize: "12px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "14px",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "12px",
+    },
+  },
+  chapterstyle: {
+    backgroundColor: "#000",
+    color: "#fff",
+    padding: "2px 8px",
+  },
+  chaptertextstyle: {
+    fontSize: "15px",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "12px",
+    },
   },
 }));
 
@@ -40,7 +69,7 @@ const CourseCard = () => {
             paddingLeft: "8px",
           }}
           title={
-            <Typography variant="h3">
+            <Typography className={classes.topic}>
               Fullstack Web Development Course <br /> by code for cause
             </Typography>
           }
@@ -55,12 +84,12 @@ const CourseCard = () => {
             title: classes.title,
           }}
         />
-        <div style={{ backgroundColor: "#000", color: "#fff", padding: "2px 8px" }}>
-          <Typography variant="h6">Chapter 1 : How to start with WD?</Typography>
+        <div className={classes.chapterstyle}>
+          <Typography className={classes.chaptertextstyle}>
+            Chapter 1 : How to start with WD?
+          </Typography>
         </div>
-        <Typography variant="caption" style={{ paddingLeft: "8px", fontStyle: "italic" }}>
-          1hr 45 min learned out of 3 days
-        </Typography>
+        <Typography className={classes.bottomfont}>1hr 45 min learned out of 3 days</Typography>
       </Card>
     </Container>
   );
